@@ -1,6 +1,6 @@
 {
-  "name": "sails-hooks-irc",
-  "version": "0.0.0",
+  "name": "sails-userhooks-ircbot",
+  "version": "0.0.1",
   "description": "An IRC Bot user hook for the Sails.js framework.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/uncletammy/sails-hooks-irc.git"
+    "url": "git://github.com/uncletammy/sails-userhooks-ircbot.git"
   },
   "keywords": [
     "irc",
@@ -19,9 +19,9 @@
   "author": "Nicholas Crumrine",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/uncletammy/sails-hooks-irc/issues"
+    "url": "https://github.com/uncletammy/sails-userhooks-ircbot/issues"
   },
-  "homepage": "https://github.com/uncletammy/sails-hooks-irc",
+  "homepage": "https://github.com/uncletammy/sails-userhooks-ircbot",
   "dependencies": {
     "lodash": "~2.4.1",
     "irc": "~0.3.7"
