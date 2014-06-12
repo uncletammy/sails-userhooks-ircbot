@@ -1,6 +1,6 @@
 var _ = require('lodash');
 var irc = require('irc');
-var config = require('./botConfig');
+// var config = require('./botConfig');
 
 module.exports = function irc(sails) {
 
@@ -48,7 +48,7 @@ module.exports = function irc(sails) {
         signIn: function(message){
             var hook = this;
 
-            console.log('Registering Bots with config ',config)
+            // console.log('Registering Bots with config ',config)
             var botResults = [];
             Bot.find().populate('channels').exec(function(err,allBots){
                 if (err){
