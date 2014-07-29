@@ -68,7 +68,7 @@ module.exports = function irc(sails) {
                         hook.signOutBot(correctBot)
                     }
 
-                    console.log(botName,'last spoke',timeDifference,'miliseconds ago');
+                    // console.log(botName,'last spoke',timeDifference,'miliseconds ago');
                 };
 
                 hook.bots[thisBot.name].autokick = thisBot.autokick;
@@ -90,12 +90,12 @@ module.exports = function irc(sails) {
         },
         signOutBot: function(botToDisconnect){
             var hook = this;
-            // console.log('shutting down interval id:',botToDisconnect.kickWatchIntervalID);
+            console.log('shutting down interval id:',botToDisconnect.kickWatchIntervalID);
             clearInterval(botToDisconnect.kickWatchIntervalID);
             var oldBotCount = Object.keys(hook.bots).length;
             botToDisconnect.disconnect();
-            console.log('Deleting bot',botToDisconnect.nick)
-            delete hook.bots[botToDisconnect.nick];
+            // console.log('Deleting bot',botToDisconnect.nick)
+            // delete hook.bots[botToDisconnect.nick];
             console.log('There were',oldBotCount,'. Now there are',Object.keys(hook.bots).length);
         },
         signInBots: function(message){
